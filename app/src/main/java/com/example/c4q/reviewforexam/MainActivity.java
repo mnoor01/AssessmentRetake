@@ -120,6 +120,10 @@ I am going to  have three activities in this project
 and I am going to use shared preferences to save inputs.
 I am going to have use many intents to pass information by using
 intent.putStringExtra, intent.getStringExtra and etc.
+I am going to use a recyclerView inside of a fragment to show numbers.
+which make it a little easier for me
+I will also use presenters so I can organize my code a little better
+
 
 
  */
