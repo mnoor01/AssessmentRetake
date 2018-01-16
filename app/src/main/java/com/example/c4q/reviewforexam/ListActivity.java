@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.support.v4.app.*;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.app.ListFragment;
 import android.support.v7.app.AppCompatActivity;
 
 
@@ -27,13 +26,14 @@ public class ListActivity extends AppCompatActivity {
         String userName=getIntent().getStringExtra(KEY_USERNAME);
         FragmentManager fragmentManager=getSupportFragmentManager();
         FragmentTransaction fragmentTransaction=fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.frag_container, ListFragment.instantiate(this,userName));
+        fragmentTransaction.replace(R.id.frag_container, ListFragment.newInstance(userName));
 
         fragmentManager.executePendingTransactions();
     }
     public void showNumber(int number){
         FragmentManager fragmentManager=getSupportFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.frag_container, )
+        fragmentManager.beginTransaction().replace(R.id.frag_container, NumberFragment.newInstance(number));
+        fragmentManager.executePendingTransactions();
 
     }
 }

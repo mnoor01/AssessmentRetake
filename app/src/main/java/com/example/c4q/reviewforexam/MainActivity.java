@@ -115,3 +115,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 }
+/*
+I am going to  have three activities in this project
+and I am going to use shared preferences to save inputs.
+I am going to have use many intents to pass information by using
+intent.putStringExtra, intent.getStringExtra and etc.
+
+
+ */
